@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Judul Utama */
+h1 {
+    color: #1e293b;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: #3b82f6;
+    width: 60px;
+    margin: 0 auto 30px;
+    border-radius: 2px;
+}
+
+/* Navigasi - Mengubah Tabel menjadi Navbar Modern */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none !important; /* Menghilangkan border 1px dari HTML */
+    margin-bottom: 50px;
+}
+
+table tr td {
+    border: none !important;
+    text-align: center;
+    padding: 0 !important;
+}
+
+table a {
+    display: inline-block;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+table a:hover {
+    color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+/* Section Sambutan */
+h2 {
+    color: #1e293b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+p {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3b82f6;
+    margin-bottom: 40px;
+}
+
+p i {
+    color: #3b82f6;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Daftar Publikasi */
+h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: transform 0.2s;
+    border: 1px solid #e2e8f0;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+    border-color: #3b82f6;
+}
+
+ul li::before {
+    content: "•";
+    color: #3b82f6;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+    margin-right: 10px;
+}

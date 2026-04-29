@@ -1,0 +1,153 @@
+/* Mengimpor font modern dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset dasar untuk memastikan layout konsisten di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling Body dengan layout Flexbox agar konten berada di tengah */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* --- Header & Garis Bawah --- */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+/* --- Navigasi (Menimpa tabel bawaan HTML) --- */
+table {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-collapse: collapse;
+    border: none; /* Menghilangkan border="1px" bawaan HTML */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Efek bayangan lembut */
+    margin-bottom: 50px;
+}
+
+td {
+    border: none;
+    text-align: center;
+}
+
+td a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+td a:hover {
+    background: #3498db;
+    color: #ffffff;
+}
+
+/* --- Bagian Profil Utama --- */
+h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Membuat gambar menjadi bulat sempurna dan estetik */
+img {
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    width: 150px !important; /* Menimpa width="100px" dari HTML */
+    height: 150px;
+    display: block;
+    margin: 0 auto 25px auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Efek zoom saat kursor diarahkan ke foto */
+}
+
+/* Membungkus paragraf sambutan menyerupai "Card" */
+p {
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+p i {
+    color: #7f8c8d;
+    font-size: 1rem;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* --- Daftar Publikasi --- */
+h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan titik (bullet) bawaan */
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+ul li {
+    background: #3498db;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 25px; /* Membuat list menyerupai tombol/badge */
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: default;
+}
+
+ul li:hover {
+    background: #2980b9;
+    transform: translateY(-3px); /* Efek tombol terangkat saat di-hover */
+}

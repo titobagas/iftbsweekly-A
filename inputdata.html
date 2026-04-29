@@ -1,52 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tambah Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>Tambah Data Mahasiswa</h2>
-    <form action="mahasiswa.html" method="post">
-      <table>
-        <tr>
-          <td><label for="nama">nama :</label></td>
-          <td>:</td>
-          <td><input type="text" name="nama" id="nama" /></td>
-        </tr>
+    <div class="container">
+      <div class="card">
+        <h2>Tambah Data Mahasiswa</h2>
+        <p class="subtitle">Silakan isi formulir di bawah ini dengan lengkap.</p>
+        
+        <form action="mahasiswa.html" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama" placeholder="Masukkan nama mahasiswa" required />
+          </div>
 
-        <tr>
-          <td><label for="nim">NIM :</label></td>
-          <td>:</td>
-          <td><input type="text" name="nim" id="nim" /></td>
-        </tr>
+          <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" name="nim" id="nim" placeholder="Contoh: 2024001" required />
+          </div>
 
-       <tr>
-          <td><label for="foto">Foto :</label></td>
-          <td>:</td>
-          <td><input type="file" name="foto" id="foto" /></td>
-        </tr>
+          <div class="form-group">
+            <label for="foto">Foto Profil</label>
+            <input type="file" name="foto" id="foto" accept="image/*" />
+          </div>
 
-        <tr>
-          <td><label for="uts">UTS :</label></td>
-          <td>:</td>
-          <td><input type="bumber" name="uts" id="uts" /></td>
-        </tr>
+          <div class="row">
+            <div class="form-group">
+              <label for="uts">Nilai UTS</label>
+              <input type="number" name="uts" id="uts" min="0" max="100" />
+            </div>
 
-        <tr>
-          <td><label for="uas">UAS :</label></td>
-          <td>:</td>
-          <td><input type="number" name="uas" id="uas" /></td>
-        </tr>
+            <div class="form-group">
+              <label for="uas">Nilai UAS</label>
+              <input type="number" name="uas" id="uas" min="0" max="100" />
+            </div>
 
-        <tr>
-          <td><label for="tugas">Tugas :</label></td>
-          <td>:</td>
-          <td><input type="number" name="tugas" id="tugas" /></td>
-        </tr>
-      </table>
-        <button type="submit" name="submit" id="submit">Tambah Data</button>
-    </a>
-    </form>
+            <div class="form-group">
+              <label for="tugas">Nilai Tugas</label>
+              <input type="number" name="tugas" id="tugas" min="0" max="100" />
+            </div>
+          </div>
+
+          <button type="submit" name="submit" id="submit" class="btn-submit">Simpan Data</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

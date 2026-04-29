@@ -1,0 +1,183 @@
+/* Mengimpor font modern dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* --- Reset Dasar --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Styling Body --- */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /* Disamakan dengan padding profil */
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* --- Bagian Header & Judul --- */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem; /* Disamakan dengan profil */
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Garis gradien menggunakan pseudo-element (menggantikan <hr> agar lebih rapi) */
+header h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    margin: 20px auto 40px auto; /* Meniru jarak margin <hr> pada profil */
+    border-radius: 5px;
+}
+
+/* --- Navigasi --- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 12px; /* Disamakan dengan tabel profil */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Shadow konsisten */
+    margin: 0 auto 50px auto;
+}
+
+nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover style disamakan persis dengan tabel td a di profil */
+nav a:hover,
+nav a.active {
+    background: #3498db;
+    color: #ffffff;
+}
+
+/* --- Konten Utama (Main) --- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* --- Kartu Kontak (Contact Container) --- */
+/* Desain kotak card disamakan dengan elemen <p> pada halaman profil */
+.contact-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 35px; /* Disamakan dengan padding p profil */
+    border-radius: 12px; /* Disamakan dengan radius p profil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 0 auto 40px auto;
+}
+
+/* Sedikit tambahan efek saat kartu kontak disorot (opsional, bisa dihapus jika tidak mau) */
+.contact-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+    display: flex;
+    align-items: center;
+    background: transparent; /* Reset background khusus p di dalam container */
+    box-shadow: none; /* Reset shadow */
+    text-align: left; /* Teks list kontak rata kiri */
+}
+
+.contact-container p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-container strong {
+    color: #2c3e50;
+    min-width: 120px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* --- Gaya Tambahan: Tombol Kontak (Opsional) --- */
+/* Jika kamu ingin membuat link (misal: "Kirim Email") di dalam kontak, 
+   gaya ini meniru desain <ul> <li> (publikasi) di halaman profil */
+.contact-container a.btn-contact {
+    display: inline-block;
+    background: #3498db;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.contact-container a.btn-contact:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* --- Bagian Footer --- */
+footer {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

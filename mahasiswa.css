@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* --- Gaya Dasar --- */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 40px;
+  max-width: 1000px; /* Membatasi lebar agar tidak terlalu melebar di layar besar */
+  margin: 0 auto; /* Posisi di tengah */
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #dcdcdc;
+  margin: 20px 0;
+}
+
+/* --- Menu Navigasi --- */
+table:first-of-type {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+table:first-of-type td {
+  text-align: center;
+  border: none; /* Menghilangkan border bawaan tabel navigasi */
+  padding: 0;
+}
+
+table:first-of-type a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 15px 20px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+table:first-of-type a:hover {
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* --- Gaya Tombol --- */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+  margin-bottom: 20px;
+  font-family: inherit;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.97); /* Efek saat ditekan */
+}
+
+a button {
+  cursor: pointer;
+}
+
+/* --- Gaya Tabel Data --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden; /* Agar lengkungan (border-radius) terlihat */
+  margin-bottom: 30px;
+  border: none;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #edf2f7;
+}
+
+/* Header Tabel */
+th {
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Membuat header khusus (UTS, UAS, Tugas) lebih menyatu */
+th[colspan],
+th[rowspan] {
+  vertical-align: middle;
+}
+
+/* Warna selang-seling pada baris tabel */
+tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+/* Efek Hover saat baris ditunjuk mouse */
+tr:hover td {
+  background-color: #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+/* --- Gaya Gambar (Foto Mahasiswa) --- */
+img {
+  border-radius: 50%; /* Membuat foto menjadi bulat */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
